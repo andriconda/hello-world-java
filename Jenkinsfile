@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('GetCode') {
       steps {
-        echo 'Hello world'
+        sh '''date
+a=10
+echo $a'''
       }
     }
   }
